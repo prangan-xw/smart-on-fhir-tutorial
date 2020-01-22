@@ -66,6 +66,7 @@
 			//alert("tId.type.coding.code = " + tId.type.coding.code + " tId.value = " + tId.value + " tId.system " + tId.system);
 			tMRN = tId.value;
 			$('#MRN').val(tMRN);
+                        setXMLSubmit();
 		}
 			          
 			            

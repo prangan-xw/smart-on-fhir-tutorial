@@ -56,6 +56,7 @@
             fname = patient.name[0].given.join(' ');
             lname = patient.name[0].family.join(' ');
 	    $('#PatientName').val(fname + " " +  lname);
+	    $('#PatName').val(fname + " " +  lname);
           }
 	  patient.identifier.forEach( function(iden) {
 	  	var tId = iden;

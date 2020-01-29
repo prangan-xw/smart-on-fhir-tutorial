@@ -62,10 +62,11 @@
 		var tMRN = "";
 		//&& (tId.type.coding.code == 'MR')
 		//&& (typeof tId.type.coding.code !== 'undefined') && (tId.type.coding.code == 'MR')
-		if ((tId.system == "urn:oid:2.16.840.1.113883.3.787.0.0") ){
+		if ((tId.system == "urn:oid:2.16.840.1.113883.3.787.0.0") || (tId.system == "urn:oid:1.2.840.114350.1.13.0.1.7.5.737384.14") ){
 			//alert("tId.type.coding.code = " + tId.type.coding.code + " tId.value = " + tId.value + " tId.system " + tId.system);
 			tMRN = tId.value;
 			$('#MRN').val(tMRN);
+			$('#FACCODE').val(tId.system);
                         setXMLSubmit();
 		}
 			          

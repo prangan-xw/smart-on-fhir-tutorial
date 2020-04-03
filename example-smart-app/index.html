@@ -151,15 +151,15 @@
         //var FACCODE = document.getElementById('FACCODE').value;
         //alert("FACCODE = " + FACCODE);
 	//Cerner
-        document.forms["myform"].submit();
+        //document.forms["myform"].submit();
 	//Epic
-	//window.location.href = "http://172.21.0.34/newui/launch_PR.html?identifier=" + document.getElementById('FACCODE').value + "|" + document.getElementById('MRN').value;
+	window.location.href = "http://172.21.0.34/newui/launch_PR.html?identifier=" + document.getElementById('FACCODE').value + "|" + document.getElementById('MRN').value;
       }
       
     </script>
     
     <!--<h1>Loading records for <span id="PatName"></span> ...</h1>-->
-    <form id="myform"  action="https://integration.hixny.com:13443/csp/healthshare/sso/ehrclient/HIXNY.SSO.PatientSearchRequest.cls" method="post">
+    <form id="myform"  action="" method="post">
       <br><br>
       <table align="center" border=0>
 	<tr><td><img src="logo-HIXNY.jpg" alt="Hixny" style="width: 75%; height: 75%"/></td></tr>	

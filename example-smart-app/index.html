@@ -101,7 +101,7 @@
     </script>
     
     <script type="text/javascript">
-     /* function getPatientName(pt) {
+      function getPatientName(pt) {
             if (pt.name) {
                 var names = pt.name.map(function(name) {
                     return name.given.join(" ") + " " + name.family.join(" ");
@@ -144,14 +144,14 @@
         });
            
       });
-      */
+      
       function setXMLSubmit(){
         //var user = document.getElementById('HixnyUserName').value;
         //var MRN = document.getElementById('MRN').value;
         //var FACCODE = document.getElementById('FACCODE').value;
         //alert("FACCODE = " + FACCODE);
 	//Cerner
-        document.forms["myform"].submit();
+        //document.forms["myform"].submit();
 	//Epic
 	//window.location.href = "http://172.21.0.34/newui/launch_PR.html?identifier=" + document.getElementById('FACCODE').value + "|" + document.getElementById('MRN').value;
       }
@@ -167,7 +167,7 @@
         <tr><td><font style="font-size:18px;font-family:arial;"><input type="text" style="font-family:arial;font-size:18px;border:none" id="PatientName" name="PatientName" value="" size="50" readonly></font></td></tr>	
         <tr><td><input type="text" id="MRN" name="MRN" value="" hidden="true"></td></tr>
 	<tr><td><input type="text" id="FACCODE" name="FACCODE" value="" hidden="true"></td></tr>
-        <tr><table align=center><tr><td><input type="button" id="Submit" value="View Patient's Record in Hixny" onclick="setXMLSubmit()" hidden="true"/></td></tr></table></tr>
+        <!--<tr><table align=center><tr><td><input type="button" id="Submit" value="View Patient's Record in Hixny" onclick="setXMLSubmit()" hidden="true"/></td></tr></table></tr>-->
         
       </table>
     </form>

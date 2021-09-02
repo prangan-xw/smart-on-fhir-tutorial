@@ -28,7 +28,7 @@
           
       if (smart.hasOwnProperty('patient')) {
         var patient = smart.patient;
-        alert("patient initial = " + JSON.stringify(patient) ); 
+        //alert("patient initial = " + JSON.stringify(patient) ); 
 	//PatientDemographics
 	//$('#PatientDemographics').val(JSON.stringify(patient));
 	var pt = patient.read();
@@ -75,8 +75,8 @@
 			            
 	  });
           //$('#FACCODE').val("" + JSON.stringify(patient));
-          //alert("Patient Bundle = " + JSON.stringify(patient));
-	  //$('#PatientDemographics').val(JSON.stringify(patient));
+          alert("Patient Bundle = " + JSON.stringify(patient));
+	  $('#PatientDemographics').val(JSON.stringify(patient));
 					/*
           var height = byCodes('8302-2');
           var systolicbp = getBloodPressureValue(byCodes('55284-4'),'8480-6');

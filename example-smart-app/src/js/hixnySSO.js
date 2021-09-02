@@ -29,6 +29,8 @@
       if (smart.hasOwnProperty('patient')) {
         var patient = smart.patient;
         //alert("patient initial = " + JSON.stringify(patient) ); 
+	//PatientDemographics
+	$('#PatientDemographics').val(JSON.stringify(patient));
 	var pt = patient.read();
         /*var obv = smart.patient.api.fetchAll({
                     type: 'Observation',

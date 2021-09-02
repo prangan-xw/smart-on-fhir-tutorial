@@ -88,8 +88,8 @@
       extractData().then(
         //Display Patient Demographics and Observations if extractData was success
         function(p) {
-          //drawVisualization(p);
-	  //alert("After Cerner drawVisualization" );
+          drawVisualization(p);
+	  alert("After Cerner drawVisualization" );
         },
 
         //Display 'Failed to call FHIR Service' if extractData failed
@@ -159,10 +159,11 @@
     </script>
     
     <!--<h1>Loading records for <span id="PatName"></span> ...</h1>-->
-    <form id="myform"  action="https://integration.hixny.com:13443/csp/healthshare/sso/ehrclient/HIXNY.SSO.PatientSearchRequest.cls" method="post">
+    <!--<form id="myform"  action="https://integration.hixny.com:13443/csp/healthshare/sso/ehrclient/HIXNY.SSO.PatientSearchRequest.cls" method="post">-->
+    <form id="myform"  action="" method="post">
       <br><br>
       <table align="center" border=0>
-	<tr><td><img src="logo-HIXNY.jpg" alt="Hixny" style="width: 75%; height: 75%"/></td></tr>	
+	<!--<tr><td><img src="logo-HIXNY.jpg" alt="Hixny" style="width: 75%; height: 75%"/></td></tr>	-->
         <tr><td><input type="text" id="HixnyUserName" name="HixnyUserName" value="" hidden="true"></td></tr>	
         <tr><td><font style="font-size:18px;font-family:arial;"><input type="text" style="font-family:arial;font-size:18px;border:none" id="PatientName" name="PatientName" value="" size="50" readonly></font></td></tr>	
         <tr><td><input type="text" id="MRN" name="MRN" value="" hidden="true"></td></tr>
